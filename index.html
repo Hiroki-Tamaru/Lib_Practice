@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RRR LLL</title>
+    <!-- Import Styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- <div class="nav-bar"></div> -->
+      <upper-components></upper-components>
+      <four-tabs
+        :activetab="activetab"
+        :pppdata="PPPData"
+        @change-tab="changeTab"
+      ></four-tabs>
+    </div>
+
+    <!-- Import App -->
+    <script src="./main.js"></script>
+
+    <!-- Import Components -->
+    <script src="./components/UpperComponents.js"></script>
+    <script src="./components/SendReceiveButtons.js"></script>
+    <script src="./components/FourTabs.js"></script>
+    <script src="./components/PPPDisplay.js"></script>
+
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
+</html>
